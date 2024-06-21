@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        
+        <!-- <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">        -->
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header class="header header_second js-heade">
+    <div class="container">
+        <div class="header__row">
+            <a href="#" class="header__logo">
+                <svg class="icon">
+                    <use xlink:href="#logo"></use>
+                </svg>
+            </a>
+
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list-item"><a href="#" class="header__list-link">Программы путешествий</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link header__list-link_active">Отели</a></li>
+                </ul>
+            </nav>
+
+            
+            <button class="header__burger js-header-burger">
+                <span class="header__burger-line1"></span>
+                <span class="header__burger-line2"></span>
+                <span class="header__burger-line3"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="header__menu js-header-menu">
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__list-item"><a href="#" class="header__list-link">Программы путешествий</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link">Отели</a></li>
+        </ul>
+    </nav>
+
+    <div class="header__social">
+        <a href="#">
+            <img src="./img/content/inst.png" alt="" width="28" height="28">
+        </a>
+        <a href="#">
+            <img src="./img/content/fb.png" alt="" width="28" height="28">
+        </a>
+    </div>
+    <button class="btn header__btn">
+        <span>Заказать звонок</span>
+        <svg class="icon">
+            <use xlink:href="#arrow-right"></use>
+        </svg>
+    </button>
+</div>
+</header>
+<main class="main">
+
+    <nav class="breadcrumbs breadcrumbs_absolute">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="/">Главная</a>
+                </li>    
+                <li class="breadcrumbs__item">
+                    <a href="/">Отели</a>
+                </li> 
+                <li class="breadcrumbs__item">
+                    <span>Parklane, a Luxury Collection Resort & Spa, Limassol</span>
+                </li>        
+            </ul>
+        </div>
+    </nav>
+    
+   
+    <section class="intro intro_second">
+
+    <div class="intro__img">
+        <picture>
+            <img src="./img/content/intro/intro_img_2.jpg" alt="" loading="lazy">
+        </picture>
+    </div>
+    <div class="intro__content">
+        <div class="container">
+            <h1 class="intro__title">Parklane, a Luxury <br> Collection Resort & Spa</h1>
+            <div class="intro__row">
+                <p class="intro__text">
+                    Отели на Кипре по цене на 5 - 12% ниже, чем на популярных сайтах. <br>
+                    Находим номера, даже когда их нет.
+                </p>
+
+                <button class="btn intro__btn intro__btn_second">
+                    <span>Забронировать номер</span>
+                    <svg class="icon">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="about">
+    <div class="container">
+
+        <div class="about__head">
+            <h2 class="about__title">Об отеле Parklane</h2>
+
+            <div class="about__head-row">
+                <a href="#" class="about__head-place">
+                    <picture>
+                        <img src="./img/content/pin.png" alt="" width="20" height="24" loading="lazy">
+                    </picture>
+                   <span>Cyprus, Limassol</span>
+                </a>
+                <button class="about__head-btn">
+                    <svg class="icon">
+                        <use xlink:href="#share"></use>
+                    </svg>
+                    <span>Поделиться</span>
+                </button>
+                <button class="about__head-btn">
+                    <svg class="icon">
+                        <use xlink:href="#heart"></use>
+                    </svg>
+                    <span>Сохранить</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="about__wrap">
+            <div class="about__col">
+                <a href="#" class="about__item">
+                    <span class="about__img">
+                        <picture>
+                            <img src="./img/content/about/1.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                    </span>
+                    <span class="about__item-content">
+                        <span class="about__item-text"><span>Смотреть</span> все (35)</span>
+                    </span>
+                </a>
+            </div>
+            <div class="about__col">
+                <a href="#" class="about__item">
+                    <span class="about__img">
+                        <picture>
+                            <img src="./img/content/about/2.jpg" alt="" width="810" height="267" loading="lazy">
+                        </picture>
+                    </span>
+                    <span class="about__item-content">
+                        <span class="about__item-text"><span>Смотреть</span>  все (35)</span>
+                    </span>
+                </a>
+
+                <a href="#" class="about__item">
+                    <span class="about__img">
+                        <picture>
+                            <img src="./img/content/about/3.jpg" alt="" width="393" height="267" loading="lazy">
+                        </picture>
+                    </span>
+                    <span class="about__item-content">
+                        <span class="about__item-text"><span>Смотреть</span>  все (35)</span>
+                    </span>
+                </a>
+
+                <a href="#" class="about__item">
+                    <span class="about__img">
+                        <picture>
+                            <img src="./img/content/about/4.jpg" alt="" width="393" height="267" loading="lazy">
+                        </picture>
+                    </span>
+                    <span class="about__item-content">
+                        <span class="about__item-text"><span>Смотреть</span>  все (35)</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="about__inner">
+
+            <div class="about__main">
+                <div class="about__tabs tabs">
+                    <ul class="tabs__list">
+                        <li class="tabs__item"><button class="tabs__button tabs__button_active">Обзор</button></li>
+                        <li class="tabs__item"><button class="tabs__button">Номера</button></li>
+                        <li class="tabs__item"><button class="tabs__button">SPA и отдых</button></li>
+                        <li class="tabs__item"><button class="tabs__button">Рестораны</button></li>
+                        <li class="tabs__item"><button class="tabs__button">Развлечения</button></li>
+                    </ul>
+                </div>
+
+                <div class="about__description">
+                    <div class="about__description-title">
+                        Насладитесь великолепным сервисом в Parklane, <br> a Luxury Collection Resort & Spa
+                    </div>
+                    <div class="about__description-text">
+                        <p>
+                            Курортный комплекс в окружении ландшафтного сада площадью 100 000 кв. метров. 
+                            Номера и виллы с видом на сад и Средиземное море. Здесь вы найдете все: от ресторанов и 
+                            теннисного корта до детского клуба и грандиозного бального зала.
+                        </p>
+                        <p>
+                            Номера курортного отеля Parklane, Limassol оформлены с использованием традиционных элементов декора и 
+                            обставлены мебелью из натуральных материалов в естественных тонах. Номера оснащены мини-баром и 
+                            телевизором с плоским 55-дюймовым экраном и спутниковыми каналами. 
+                            Собственная ванная комната с ванной или душевым уголком и тропическим душем укомплектована феном и 
+                            бесплатными туалетно-косметическими принадлежностями.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__services">
+                    <div class="about__services-title">Популярные удобства и услуги</div>
+                    <div class="about__services-flex">
+                        <div class="about__services-col">
+                            <div class="about__services-item">
+                                <div class="about__services-img">
+                                    <picture>
+                                        <img src="./img/content/about/icon_01.png" alt="" width="52" height="52" loading="lazy">
+                                    </picture>
+                                </div>
+                                <span>SPA & Health центр</span>
+                            </div>
+                            <div class="about__services-item">
+                                <div class="about__services-img">
+                                    <picture>
+                                        <img src="./img/content/about/icon_02.png" alt="" width="52" height="52" loading="lazy">
+                                    </picture>
+                                </div>
+                                <span>Пляж на первой линии</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about__services-col">
+                            <div class="about__services-item">
+                                <div class="about__services-img">
+                                    <picture>
+                                        <img src="./img/content/about/icon_03.png" alt="" width="52" height="52" loading="lazy">
+                                    </picture>
+                                </div>
+                                <span>Превосходный завтрак</span>
+                            </div>
+                            <div class="about__services-item">
+                                <div class="about__services-img">
+                                    <picture>
+                                        <img src="./img/content/about/icon_04.png" alt="" width="52" height="52" loading="lazy">
+                                    </picture>
+                                </div>
+                                <span>Спорт и развлечения</span>
+                            </div>
+                        </div>
+
+                        <div class="about__services-col">
+                            <div class="about__services-item">
+                                <div class="about__services-img">
+                                    <picture>
+                                        <img src="./img/content/about/icon_05.png" alt="" width="52" height="52" loading="lazy">
+                                    </picture>
+                                </div>
+                                <span>4 бассейна</span>
+                            </div>
+                            <div class="about__services-item">
+                                <button>+10</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__right">
+                <div class="about__right-title">Выбор гостей Parklane Resort & Spa</div>
+
+                <div class="about__right-item about__right-item_first">
+                    <svg class="icon">
+                        <use xlink:href="#star"></use>
+                    </svg>
+                    <p>
+                        <span>Частный ужин в беседке на пляже</span>
+                        Изысканные блюда от шеф-повара в уютной атмосфере на берегу моря — для особого случая
+                    </p>
+                </div>
+
+                <div class="about__right-item">
+                    <svg class="icon">
+                        <use xlink:href="#star"></use>
+                    </svg>
+                    <p>
+                        <span>Дегустация вин</span>
+                        Традиционное кипрское вино и кулинарные шедевры — каждый день в 16:30 в The Gallery
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <section class="number">
+    <div class="container">
+        <h2 class="number__title">Номера</h2>
+
+
+        <div class="tabs number__tabs">
+            <ul class="tabs__list">
+                <li class="tabs__item"><button class="tabs__button">Superior</button></li>
+                <li class="tabs__item"><button class="tabs__button">Deluxe</button></li>
+                <li class="tabs__item"><button class="tabs__button tabs__button_active">Suite</button></li>
+                <li class="tabs__item"><button class="tabs__button">Villa</button></li>
+                <li class="tabs__item"><button class="tabs__button">Все</button></li>
+            </ul>
+        </div>
+
+
+        <div class="number__row">
+            <div class="number__card">
+                <div class="number__head">
+                    <div class="number__img js-number-slider">
+                        <picture>
+                            <img src="./img/content/number/1.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/1.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/1.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/1.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/1.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="number__nav">
+
+                        <div class="number__counter js-counter">0 / 0</div>
+
+                        <div class="number__nav-buttons">
+                            <button class="js-number-slider-prev">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="js-number-slider-next">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="number__body">
+                    <div class="number__body-title">Panoramic Junior Suite with Sea View</div>
+
+                    <div class="number__flex">
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>74-81 м<sup>2</sup></span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>2 гостя</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Балкон</span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Вид на море</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Спальня и гостиная</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn_black number__button">Забронировать номер</button>
+                </div>
+            </div>
+
+            <div class="number__card">
+                <div class="number__head">
+                    <div class="number__img js-number-slider">
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/2.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="number__nav">
+
+                        <div class="number__counter js-counter">0 / 0</div>
+
+                        <div class="number__nav-buttons">
+                            <button class="js-number-slider-prev">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="js-number-slider-next">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="number__body">
+                    <div class="number__body-title">Panoramic Larger Suite with Sea View</div>
+
+                    <div class="number__flex">
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>90-100 м <sup>2</sup></span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>4 гостя</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Балкон</span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Вид на море</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Спальня и гостиная</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn_black number__button">Забронировать номер</button>
+                </div>
+            </div>
+
+            <div class="number__card">
+                <div class="number__head">
+                    <div class="number__img js-number-slider">
+                        <picture>
+                            <img src="./img/content/number/3.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/3.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/3.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/3.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/3.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="number__nav">
+
+                        <div class="number__counter js-counter">0 / 0</div>
+
+                        <div class="number__nav-buttons">
+                            <button class="js-number-slider-prev">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="js-number-slider-next">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="number__body">
+                    <div class="number__body-title">The Amphora Suite with a Private Pool and Terrace</div>
+
+                    <div class="number__flex">
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>214 м<sup>2</sup></span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>2 гостя</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Балкон</span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Вид на море</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Спальня и гостиная</span>
+                            </div>
+
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Частный бассейн и терраса</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button class="btn btn_black number__button">Забронировать номер</button>
+                </div>
+            </div>
+
+            <div class="number__card">
+                <div class="number__head">
+                    <div class="number__img js-number-slider">
+                        <picture>
+                            <img src="./img/content/number/4.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/4.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/4.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                        <picture>
+                            <img src="./img/content/number/4.jpg" alt="" width="810" height="554" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="number__nav">
+
+                        <div class="number__counter js-counter">0 / 0</div>
+
+                        <div class="number__nav-buttons">
+                            <button class="js-number-slider-prev">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="js-number-slider-next">
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="number__body">
+                    <div class="number__body-title">The Diamond Suite with a Private Pool and Terrace</div>
+
+                    <div class="number__flex">
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>335 м<sup>2</sup></span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>2 гостя</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>2 террасы</span>
+                            </div>
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>2 ванные</span>
+                            </div>
+                        </div>
+                        <div class="number__col">
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Спальня, гостиная, столовая</span>
+                            </div>
+
+                            <div class="number__col-item">
+                                <svg class="icon">
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <span>Частный бассейн, джакузи</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button class="btn btn_black number__button">Забронировать номер</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</main>
+      
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__info">
+                <a href="#" class="footer__logo">
+                    <svg class="icon">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                </a>
+
+                <p class="footer__info-text">
+                    Индивидуальные путешествия и&nbsp;деловые поездки по&nbsp;всему миру. <br>
+
+                    Находим номера, даже когда их&nbsp;нет.
+                </p>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <svg class="icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <svg class="icon">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="footer__menu">
+
+                <div class="footer__col">
+                    <div class="footer__col-title">Путешествия</div>
+
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Программы путешествий</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Направления путешествий</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Путеводитель</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link"> Деловые поездки</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__col-title">Отели</div>
+
+                    <ul class="footer__list">                
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Все отели</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Кипр</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Великобритания</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Франция</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">ОАЭ</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Португалия</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__col-title">Информация</div>
+
+                    <ul class="footer__list">         
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Услуги</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Отзывы</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <div class="footer__copy">&copy;&nbsp;Cashalot.Travel 2024. Все права защищены.</div>
+
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+
+<svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" id="instagram">
+      <circle cx="21" cy="21" r="21" fill="white"></circle>
+      <path d="M24.84 21C24.84 21.7595 24.6148 22.5019 24.1928 23.1334C23.7709 23.7649 23.1712 24.2571 22.4695 24.5477C21.7678 24.8383 20.9957 24.9144 20.2509 24.7662C19.506 24.6181 18.8217 24.2523 18.2847 23.7153C17.7477 23.1783 17.382 22.494 17.2338 21.7491C17.0856 21.0043 17.1617 20.2322 17.4523 19.5305C17.7429 18.8288 18.2351 18.2291 18.8666 17.8072C19.4981 17.3852 20.2405 17.16 21 17.16C22.0181 17.1612 22.9941 17.5661 23.714 18.286C24.4339 19.0059 24.8388 19.9819 24.84 21ZM33 15.72V26.28C32.998 28.0616 32.2893 29.7697 31.0295 31.0295C29.7697 32.2893 28.0616 32.998 26.28 33H15.72C13.9384 32.998 12.2303 32.2893 10.9705 31.0295C9.71066 29.7697 9.00202 28.0616 9 26.28V15.72C9.00202 13.9384 9.71066 12.2303 10.9705 10.9705C12.2303 9.71066 13.9384 9.00202 15.72 9H26.28C28.0616 9.00202 29.7697 9.71066 31.0295 10.9705C32.2893 12.2303 32.998 13.9384 33 15.72ZM26.76 21C26.76 19.8608 26.4222 18.7471 25.7893 17.7999C25.1563 16.8527 24.2568 16.1144 23.2043 15.6785C22.1518 15.2425 20.9936 15.1284 19.8763 15.3507C18.7589 15.5729 17.7326 16.1215 16.9271 16.9271C16.1215 17.7326 15.5729 18.7589 15.3507 19.8763C15.1284 20.9936 15.2425 22.1518 15.6785 23.2043C16.1144 24.2568 16.8527 25.1563 17.7999 25.7893C18.7471 26.4222 19.8608 26.76 21 26.76C22.5271 26.7583 23.9912 26.1509 25.071 25.071C26.1509 23.9912 26.7583 22.5271 26.76 21ZM28.68 14.76C28.68 14.4752 28.5955 14.1968 28.4373 13.96C28.2791 13.7232 28.0542 13.5386 27.7911 13.4296C27.5279 13.3206 27.2384 13.2921 26.9591 13.3477C26.6797 13.4032 26.4232 13.5404 26.2218 13.7418C26.0204 13.9432 25.8832 14.1997 25.8277 14.4791C25.7721 14.7584 25.8006 15.0479 25.9096 15.3111C26.0186 15.5742 26.2032 15.7991 26.44 15.9573C26.6768 16.1155 26.9552 16.2 27.24 16.2C27.6219 16.2 27.9882 16.0483 28.2582 15.7782C28.5283 15.5082 28.68 15.1419 28.68 14.76Z" fill="#191E24"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" id="facebook">
+        <circle cx="21" cy="21" r="21" fill="white"></circle>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.25 21.0738C33.25 14.309 27.7648 8.82382 21 8.82382C14.2352 8.82382 8.75 14.309 8.75 21.0738C8.75 27.1879 13.2289 32.2558 19.0859 33.1756V24.6159H15.9748V21.0738H19.0859V18.375C19.0859 15.3054 20.9152 13.6084 23.713 13.6084C25.0534 13.6084 26.4556 13.848 26.4556 13.848V16.8629H24.9102C23.3893 16.8629 22.9135 17.8068 22.9135 18.7769V21.0738H26.3107L25.7682 24.6159H22.9141V33.1767C28.7711 32.2574 33.25 27.1895 33.25 21.0738Z" fill="#191E24"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" id="youtube">
+        <circle cx="21" cy="21" r="21" fill="white"></circle>
+        <g clip-path="url(#clip0_1963_458)">
+          <path d="M33.8297 15.5557C33.8297 13.2706 32.1488 11.4323 30.0719 11.4323C27.2586 11.3008 24.3894 11.25 21.4573 11.25H20.5433C17.6183 11.25 14.7441 11.3008 11.9308 11.4328C9.8589 11.4328 8.17804 13.2812 8.17804 15.5664C8.05109 17.3737 7.99726 19.1815 8.00031 20.9893C7.99523 22.7971 8.05278 24.6067 8.17297 26.4179C8.17297 28.703 9.85382 30.5565 11.9257 30.5565C14.8812 30.6936 17.9128 30.7546 20.9952 30.7495C24.0827 30.7596 27.1059 30.6953 30.0648 30.5565C32.1417 30.5565 33.8226 28.703 33.8226 26.4179C33.9444 24.605 34.0003 22.7971 33.9952 20.9843C34.0067 19.1764 33.9516 17.3669 33.8297 15.5557ZM18.512 25.971V15.9925L25.8753 20.9792L18.512 25.971Z" fill="#191E24"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_1963_458">
+            <rect width="26" height="26" fill="white" transform="translate(8 8)"></rect>
+          </clipPath>
+        </defs>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239 33" id="logo">
+        <path d="M9.4125 32.525C7.49917 32.525 5.87167 32.0992 4.53 31.2475C3.2 30.3842 2.185 29.2 1.485 27.695C0.785 26.19 0.423333 24.475 0.4 22.55C0.423333 20.5783 0.790833 18.8458 1.5025 17.3525C2.22583 15.8475 3.25833 14.675 4.6 13.835C5.94167 12.995 7.5575 12.575 9.4475 12.575C11.4425 12.575 13.1575 13.065 14.5925 14.045C16.0392 15.025 17.0075 16.3667 17.4975 18.07L14.4175 18.9975C14.0208 17.9008 13.3733 17.0492 12.475 16.4425C11.5883 15.8358 10.5675 15.5325 9.4125 15.5325C8.1175 15.5325 7.05 15.8358 6.21 16.4425C5.37 17.0375 4.74583 17.8658 4.3375 18.9275C3.92917 19.9775 3.71917 21.185 3.7075 22.55C3.73083 24.65 4.215 26.3475 5.16 27.6425C6.11667 28.9258 7.53417 29.5675 9.4125 29.5675C10.6492 29.5675 11.6758 29.2875 12.4925 28.7275C13.3092 28.1558 13.9275 27.3333 14.3475 26.26L17.4975 27.0825C16.8442 28.8442 15.8233 30.1917 14.435 31.125C13.0467 32.0583 11.3725 32.525 9.4125 32.525ZM26.2707 32.525C24.8591 32.525 23.6749 32.2683 22.7182 31.755C21.7732 31.23 21.0557 30.5417 20.5657 29.69C20.0874 28.8383 19.8482 27.905 19.8482 26.89C19.8482 25.8983 20.0349 25.0408 20.4082 24.3175C20.7932 23.5825 21.3299 22.9758 22.0182 22.4975C22.7066 22.0075 23.5291 21.6225 24.4857 21.3425C25.3841 21.0975 26.3874 20.8875 27.4957 20.7125C28.6157 20.5258 29.7474 20.3567 30.8907 20.205C32.0341 20.0533 33.1016 19.9075 34.0932 19.7675L32.9732 20.415C33.0082 18.735 32.6699 17.4925 31.9582 16.6875C31.2582 15.8825 30.0449 15.48 28.3182 15.48C27.1749 15.48 26.1716 15.7425 25.3082 16.2675C24.4566 16.7808 23.8557 17.6208 23.5057 18.7875L20.5482 17.895C21.0032 16.2383 21.8841 14.9375 23.1907 13.9925C24.4974 13.0475 26.2182 12.575 28.3532 12.575C30.0682 12.575 31.5382 12.8842 32.7632 13.5025C33.9999 14.1092 34.8866 15.0308 35.4232 16.2675C35.6916 16.8508 35.8607 17.4867 35.9307 18.175C36.0007 18.8517 36.0357 19.5633 36.0357 20.31V32H33.2707V27.4675L33.9182 27.8875C33.2066 29.4158 32.2091 30.5708 30.9257 31.3525C29.6541 32.1342 28.1024 32.525 26.2707 32.525ZM26.7432 29.9175C27.8632 29.9175 28.8316 29.7192 29.6482 29.3225C30.4766 28.9142 31.1416 28.3833 31.6432 27.73C32.1449 27.065 32.4716 26.3417 32.6232 25.56C32.7982 24.9767 32.8916 24.3292 32.9032 23.6175C32.9266 22.8942 32.9382 22.34 32.9382 21.955L34.0232 22.4275C33.0082 22.5675 32.0107 22.7017 31.0307 22.83C30.0507 22.9583 29.1232 23.0983 28.2482 23.25C27.3732 23.39 26.5857 23.5592 25.8857 23.7575C25.3724 23.9208 24.8882 24.1308 24.4332 24.3875C23.9899 24.6442 23.6282 24.9767 23.3482 25.385C23.0799 25.7817 22.9457 26.2775 22.9457 26.8725C22.9457 27.3858 23.0741 27.8758 23.3307 28.3425C23.5991 28.8092 24.0074 29.1883 24.5557 29.48C25.1157 29.7717 25.8449 29.9175 26.7432 29.9175ZM47.7257 32.5075C45.4741 32.5075 43.6249 32.0175 42.1782 31.0375C40.7432 30.0458 39.8624 28.6633 39.5357 26.89L42.7207 26.3825C42.9774 27.4092 43.5666 28.2258 44.4882 28.8325C45.4099 29.4275 46.5532 29.725 47.9182 29.725C49.2132 29.725 50.2282 29.4567 50.9632 28.92C51.6982 28.3833 52.0657 27.6542 52.0657 26.7325C52.0657 26.1958 51.9432 25.7642 51.6982 25.4375C51.4532 25.0992 50.9457 24.7842 50.1757 24.4925C49.4174 24.2008 48.2682 23.8508 46.7282 23.4425C45.0599 22.9992 43.7474 22.5383 42.7907 22.06C41.8341 21.5817 41.1516 21.0275 40.7432 20.3975C40.3349 19.7675 40.1307 19.0033 40.1307 18.105C40.1307 16.9967 40.4341 16.0283 41.0407 15.2C41.6474 14.36 42.4932 13.7125 43.5782 13.2575C44.6749 12.8025 45.9466 12.575 47.3932 12.575C48.8282 12.575 50.1116 12.8025 51.2432 13.2575C52.3749 13.7125 53.2849 14.36 53.9732 15.2C54.6732 16.0283 55.0874 16.9967 55.2157 18.105L52.0307 18.6825C51.8791 17.6675 51.3891 16.8683 50.5607 16.285C49.7441 15.7017 48.6882 15.3925 47.3932 15.3575C46.1682 15.3108 45.1707 15.5267 44.4007 16.005C43.6424 16.4833 43.2632 17.1308 43.2632 17.9475C43.2632 18.4025 43.4032 18.7933 43.6832 19.12C43.9749 19.4467 44.5057 19.7558 45.2757 20.0475C46.0574 20.3392 47.1891 20.6717 48.6707 21.045C50.3391 21.465 51.6516 21.9258 52.6082 22.4275C53.5766 22.9175 54.2649 23.5008 54.6732 24.1775C55.0816 24.8425 55.2857 25.665 55.2857 26.645C55.2857 28.465 54.6149 29.9 53.2732 30.95C51.9316 31.9883 50.0824 32.5075 47.7257 32.5075ZM72.6028 32V22.5325C72.6028 21.6342 72.5211 20.7708 72.3578 19.9425C72.2061 19.1142 71.932 18.3733 71.5353 17.72C71.1503 17.055 70.6253 16.53 69.9603 16.145C69.307 15.76 68.4786 15.5675 67.4753 15.5675C66.6936 15.5675 65.982 15.7017 65.3403 15.97C64.7103 16.2267 64.1678 16.6233 63.7128 17.16C63.2578 17.6967 62.902 18.3733 62.6453 19.19C62.4003 19.995 62.2778 20.9458 62.2778 22.0425L60.2303 21.4125C60.2303 19.5808 60.557 18.0117 61.2103 16.705C61.8753 15.3867 62.8028 14.3775 63.9928 13.6775C65.1945 12.9658 66.6061 12.61 68.2278 12.61C69.4528 12.61 70.497 12.8025 71.3603 13.1875C72.2236 13.5725 72.9411 14.0858 73.5128 14.7275C74.0845 15.3575 74.5336 16.0692 74.8603 16.8625C75.187 17.6442 75.4145 18.4433 75.5428 19.26C75.6828 20.065 75.7528 20.8292 75.7528 21.5525V32H72.6028ZM59.1278 32V6.8H61.9278V20.7125H62.2778V32H59.1278ZM85.675 32.525C84.2634 32.525 83.0792 32.2683 82.1225 31.755C81.1775 31.23 80.46 30.5417 79.97 29.69C79.4917 28.8383 79.2525 27.905 79.2525 26.89C79.2525 25.8983 79.4392 25.0408 79.8125 24.3175C80.1975 23.5825 80.7342 22.9758 81.4225 22.4975C82.1109 22.0075 82.9334 21.6225 83.89 21.3425C84.7884 21.0975 85.7917 20.8875 86.9 20.7125C88.02 20.5258 89.1517 20.3567 90.295 20.205C91.4384 20.0533 92.5059 19.9075 93.4975 19.7675L92.3775 20.415C92.4125 18.735 92.0742 17.4925 91.3625 16.6875C90.6625 15.8825 89.4492 15.48 87.7225 15.48C86.5792 15.48 85.5759 15.7425 84.7125 16.2675C83.8609 16.7808 83.26 17.6208 82.91 18.7875L79.9525 17.895C80.4075 16.2383 81.2884 14.9375 82.595 13.9925C83.9017 13.0475 85.6225 12.575 87.7575 12.575C89.4725 12.575 90.9425 12.8842 92.1675 13.5025C93.4042 14.1092 94.2909 15.0308 94.8275 16.2675C95.0959 16.8508 95.265 17.4867 95.335 18.175C95.405 18.8517 95.44 19.5633 95.44 20.31V32H92.675V27.4675L93.3225 27.8875C92.6109 29.4158 91.6134 30.5708 90.33 31.3525C89.0584 32.1342 87.5067 32.525 85.675 32.525ZM86.1475 29.9175C87.2675 29.9175 88.2359 29.7192 89.0525 29.3225C89.8809 28.9142 90.5459 28.3833 91.0475 27.73C91.5492 27.065 91.8759 26.3417 92.0275 25.56C92.2025 24.9767 92.2959 24.3292 92.3075 23.6175C92.3309 22.8942 92.3425 22.34 92.3425 21.955L93.4275 22.4275C92.4125 22.5675 91.415 22.7017 90.435 22.83C89.455 22.9583 88.5275 23.0983 87.6525 23.25C86.7775 23.39 85.99 23.5592 85.29 23.7575C84.7767 23.9208 84.2925 24.1308 83.8375 24.3875C83.3942 24.6442 83.0325 24.9767 82.7525 25.385C82.4842 25.7817 82.35 26.2775 82.35 26.8725C82.35 27.3858 82.4784 27.8758 82.735 28.3425C83.0034 28.8092 83.4117 29.1883 83.96 29.48C84.52 29.7717 85.2492 29.9175 86.1475 29.9175ZM100.34 32V6.275H103.455V32H100.34ZM116.756 32.525C114.878 32.525 113.256 32.0992 111.891 31.2475C110.538 30.3958 109.493 29.2175 108.758 27.7125C108.023 26.2075 107.656 24.4808 107.656 22.5325C107.656 20.5492 108.029 18.8108 108.776 17.3175C109.523 15.8242 110.578 14.6633 111.943 13.835C113.308 12.995 114.913 12.575 116.756 12.575C118.646 12.575 120.273 13.0008 121.638 13.8525C123.003 14.6925 124.048 15.865 124.771 17.37C125.506 18.8633 125.873 20.5842 125.873 22.5325C125.873 24.5042 125.506 26.2425 124.771 27.7475C124.036 29.2408 122.986 30.4133 121.621 31.265C120.256 32.105 118.634 32.525 116.756 32.525ZM116.756 29.5675C118.716 29.5675 120.174 28.9142 121.131 27.6075C122.088 26.3008 122.566 24.6092 122.566 22.5325C122.566 20.3975 122.082 18.7 121.113 17.44C120.145 16.1683 118.693 15.5325 116.756 15.5325C115.438 15.5325 114.353 15.83 113.501 16.425C112.649 17.02 112.013 17.8425 111.593 18.8925C111.173 19.9425 110.963 21.1558 110.963 22.5325C110.963 24.6558 111.453 26.3592 112.433 27.6425C113.413 28.9258 114.854 29.5675 116.756 29.5675ZM140.279 32C139.159 32.2217 138.051 32.3092 136.954 32.2625C135.869 32.2275 134.901 32.0117 134.049 31.615C133.197 31.2067 132.55 30.5767 132.106 29.725C131.733 28.9783 131.529 28.2258 131.494 27.4675C131.471 26.6975 131.459 25.8283 131.459 24.86V7.85H134.574V24.72C134.574 25.49 134.58 26.1492 134.591 26.6975C134.615 27.2458 134.737 27.7183 134.959 28.115C135.379 28.8617 136.044 29.2992 136.954 29.4275C137.876 29.5558 138.984 29.5208 140.279 29.3225V32ZM127.626 15.6725V13.1H140.279V15.6725H127.626ZM144.676 32V28.57H148.106V32H144.676ZM161.46 31.72C162.366 31.72 163.246 31.4 164.1 30.76C164.98 30.12 165.686 29.1333 166.22 27.8L166.46 27.88C165.953 29.2133 165.206 30.3067 164.22 31.16C163.233 32.0133 162.073 32.44 160.74 32.44C158.98 32.44 157.633 31.9467 156.7 30.96C155.766 29.9467 155.3 28.5067 155.3 26.64V13H151.3V12.76H152.38C154.14 12.4933 155.446 11.4933 156.3 9.76C157.073 8.08 157.486 6.12 157.54 3.88H157.82V12.76H158.98C161.513 12.76 163.313 12.64 164.38 12.4L164.5 13H157.82V27.24C157.82 30.2267 159.033 31.72 161.46 31.72ZM168.861 32V13.12L171.381 12.28V15.6C171.914 14.6667 172.634 13.88 173.541 13.24C174.447 12.6 175.447 12.28 176.541 12.28C177.261 12.28 178.141 12.4667 179.181 12.84L179.021 14.32C178.727 13.92 178.287 13.6 177.701 13.36C177.141 13.12 176.607 13 176.101 13C175.087 13 174.234 13.2133 173.541 13.64C172.847 14.04 172.127 14.8133 171.381 15.96V32H168.861ZM182.538 17.8H182.178C182.071 17.48 182.018 17.0933 182.018 16.64C182.018 15.36 182.538 14.32 183.578 13.52C184.618 12.6933 185.991 12.28 187.698 12.28C192.605 12.28 195.058 14.4 195.058 18.64V29.36C195.058 30.9333 195.525 31.72 196.458 31.72C197.231 31.72 197.765 31.0133 198.058 29.6H198.298C198.005 31.4933 197.058 32.44 195.458 32.44C193.511 32.44 192.538 31 192.538 28.12C189.871 31 187.311 32.44 184.858 32.44C183.418 32.44 182.311 32.08 181.538 31.36C180.765 30.6133 180.378 29.64 180.378 28.44C180.378 27.3467 180.738 26.3467 181.458 25.44C182.178 24.5067 183.165 23.7467 184.418 23.16C186.525 22.2 188.858 21.48 191.418 21L192.538 20.8V18.64C192.538 16.48 192.151 14.92 191.378 13.96C190.631 13 189.325 12.52 187.458 12.52C186.045 12.52 184.845 12.9333 183.858 13.76C182.871 14.5867 182.378 15.5733 182.378 16.72C182.378 17.1467 182.431 17.5067 182.538 17.8ZM192.538 27.76V21.04C189.845 21.52 187.711 22.2133 186.138 23.12C184.271 24.1867 183.338 25.7867 183.338 27.92C183.338 29.0933 183.631 29.9733 184.218 30.56C184.805 31.12 185.591 31.4 186.578 31.4C187.485 31.4 188.511 31.0133 189.658 30.24C190.751 29.4933 191.711 28.6667 192.538 27.76ZM207.669 29.24L210.709 21.4C212.255 17.2933 213.202 14.4133 213.549 12.76H214.669C213.149 16.2267 211.975 19 211.149 21.08L206.669 32.44H206.429L198.189 12.76H200.949L207.669 29.24ZM225.084 12.28C227.484 12.28 229.324 13.1067 230.604 14.76C231.884 16.44 232.537 18.3867 232.564 20.6H219.324C219.324 28.0133 221.444 31.72 225.684 31.72C228.377 31.72 230.537 30.4 232.164 27.76L232.364 27.88C230.551 30.92 228.071 32.44 224.924 32.44C223.964 32.44 223.004 32.28 222.044 31.96C221.111 31.6133 220.204 31.0933 219.324 30.4C218.444 29.68 217.724 28.64 217.164 27.28C216.631 25.92 216.364 24.32 216.364 22.48C216.364 19.36 217.137 16.88 218.684 15.04C220.257 13.2 222.391 12.28 225.084 12.28ZM219.324 20.36H229.764C229.764 18.0933 229.351 16.2267 228.524 14.76C227.671 13.2667 226.417 12.52 224.764 12.52C221.484 12.52 219.671 15.1333 219.324 20.36ZM236.478 32V1.32L238.998 0.479998V32H236.478Z" fill="currentColor"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 10" id="arrow-right">
+        <path d="M0 5H31M31 5L27 1M31 5L27 9.5" stroke="currentColor"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 64" id="arrow-prev">
+        <g filter="url(#filter0_b_1901_1377)">
+          <rect x="1" y="1" width="90" height="62" rx="31" stroke="currentColor" stroke-width="2"></rect>
+        </g>
+        <path d="M57 32.5H36M36 32.5L43.5 24M36 32.5L43 39.5L43.5 40" stroke="#747676"></path>
+        <defs>
+          <filter id="filter0_b_1901_1377" x="-10" y="-10" width="112" height="84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"></feGaussianBlur>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1901_1377"></feComposite>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1901_1377" result="shape"></feBlend>
+          </filter>
+        </defs>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 64" id="arrow-next">
+        <g filter="url(#filter0_b_1901_1373)">
+          <rect x="1" y="1" width="90" height="62" rx="31" stroke="currentColor" stroke-width="2"></rect>
+        </g>
+        <path d="M36 32.5H57M57 32.5L49.5 24M57 32.5L50 39.5L49.5 40" stroke="#747676"></path>
+        <defs>
+          <filter id="filter0_b_1901_1373" x="-10" y="-10" width="112" height="84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"></feGaussianBlur>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1901_1373"></feComposite>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1901_1373" result="shape"></feBlend>
+          </filter>
+        </defs>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="check">
+        <path d="M8.5 0C3.81315 0 0 3.81315 0 8.5C0 13.1869 3.81315 17 8.5 17C13.1869 17 17 13.1869 17 8.5C17 3.81315 13.1869 0 8.5 0ZM12.9237 5.65127L7.43137 12.1897C7.37112 12.2615 7.29616 12.3195 7.21155 12.3597C7.12694 12.4 7.03467 12.4216 6.94099 12.4231H6.92995C6.83831 12.423 6.74769 12.4037 6.66398 12.3664C6.58028 12.3291 6.50535 12.2746 6.44406 12.2065L4.09022 9.59111C4.03044 9.5277 3.98393 9.45299 3.95344 9.37136C3.92295 9.28972 3.90909 9.20282 3.91266 9.11575C3.91623 9.02868 3.93717 8.94321 3.97425 8.86435C4.01133 8.78549 4.0638 8.71484 4.12858 8.65655C4.19335 8.59825 4.26912 8.5535 4.35144 8.52491C4.43376 8.49632 4.52096 8.48447 4.60793 8.49007C4.69489 8.49566 4.77985 8.51858 4.85783 8.55748C4.93581 8.59638 5.00522 8.65048 5.062 8.71659L6.91279 10.7729L11.9225 4.81027C12.0348 4.68035 12.1938 4.59986 12.3651 4.58622C12.5363 4.57258 12.706 4.62686 12.8376 4.73735C12.9691 4.84783 13.0518 5.00564 13.068 5.17666C13.0841 5.34767 13.0323 5.51816 12.9237 5.65127Z" fill="#191E24"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 22" id="share">
+        <path d="M5.56152 11.9448L14.3132 16.8676M14.3132 4.63232L5.56152 9.55506M5.875 10.75C5.875 12.0962 4.78369 13.1875 3.4375 13.1875C2.09131 13.1875 1 12.0962 1 10.75C1 9.40381 2.09131 8.3125 3.4375 8.3125C4.78369 8.3125 5.875 9.40381 5.875 10.75ZM18.875 3.4375C18.875 4.78369 17.7837 5.875 16.4375 5.875C15.0913 5.875 14 4.78369 14 3.4375C14 2.09131 15.0913 1 16.4375 1C17.7837 1 18.875 2.09131 18.875 3.4375ZM18.875 18.0625C18.875 19.4087 17.7837 20.5 16.4375 20.5C15.0913 20.5 14 19.4087 14 18.0625C14 16.7163 15.0913 15.625 16.4375 15.625C17.7837 15.625 18.875 16.7163 18.875 18.0625Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20" id="heart">
+        <path d="M15.6722 1C12.3755 1 10.7505 4.25 10.7505 4.25C10.7505 4.25 9.12552 1 5.8288 1C3.14958 1 1.02794 3.24148 1.00052 5.91613C0.94466 11.468 5.40478 15.4163 10.2935 18.7343C10.4283 18.826 10.5875 18.8751 10.7505 18.8751C10.9135 18.8751 11.0728 18.826 11.2076 18.7343C16.0958 15.4163 20.5559 11.468 20.5005 5.91613C20.4731 3.24148 18.3515 1 15.6722 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" id="star">
+        <path d="M25 9.57143H15.7857L13 1L10.2143 9.57143H1L8.5 14.7143L5.60714 23.2857L13 17.9286L20.3929 23.2857L17.5 14.7143L25 9.57143Z" stroke="black" stroke-width="2" stroke-linejoin="round"></path>
+    </symbol>
+</svg>
+
+
+
+
+
+
+
+
+        
+<link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+<link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+<link rel="stylesheet" href="./libs/select2/select2.min.css">
+
+
+<script src="./libs/jquery-3.7.1.min.js"></script>
+<script src="./libs/slick-1.8.1/slick.min.js"></script>
+<script src="./libs/select2/select2.min.js"></script>
+<script src="/libs/jquery.inputmask.min.js"></script>
+
+
+<script src="js/main.js"></script>
+    </body>
+
+    
+
+</html>
+
+

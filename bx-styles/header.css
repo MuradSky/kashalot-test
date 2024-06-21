@@ -1,0 +1,214 @@
+.header {
+  padding: 26px 0
+}
+.header_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100
+}
+.header_second {
+  border-bottom: 1px solid #ededed
+}
+.header_second .header__list-link,
+.header_second .header__logo {
+  color: #000
+}
+.header_second .header__burger-line1,
+.header_second .header__burger-line2,
+.header_second .header__burger-line3,
+.header_second .header__list-link:after {
+  background-color: #000
+}
+.header_second .header__menu {
+  background-color: #fff
+}
+.header__logo {
+  color: #fff;
+  position: relative;
+  z-index: 100
+}
+.header__logo .icon {
+  width: 240px;
+  height: 58px
+}
+.header.is-show .header__logo {
+  color: #000;
+  position: relative;
+  z-index: 300
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.header__list {
+  display: flex
+}
+.header__list-item:not(:last-child) {
+  margin-right: 42px
+}
+.header__list-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 15px;
+  padding-bottom: 10px;
+  position: relative
+}
+.header__list-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity .3s linear
+}
+.header__list-link:hover:after,
+.header__list-link_active:after {
+  opacity: 1
+}
+.header__burger {
+  display: none;
+  padding: 5px
+}
+.header__burger.is-change .header__burger-line1 {
+  transform: rotate(-45deg) translate(-4px,2px);
+  background-color: #000
+}
+.header__burger.is-change .header__burger-line2 {
+  opacity: 0
+}
+.header__burger.is-change .header__burger-line3 {
+  transform: rotate(45deg) translate(-6px,-5px);
+  background-color: #000
+}
+.header__burger-line1,
+.header__burger-line2,
+.header__burger-line3 {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+  transition: transform .3s linear,opacity .3s linear
+}
+.header__burger-line1,
+.header__burger-line2 {
+  margin-bottom: 4px
+}
+.header__social {
+  display: flex;
+  align-items: center;
+  margin-top: 64px
+}
+.header__social a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px
+}
+.header__social a img {
+  width: 28px;
+  height: 28px
+}
+.header__btn {
+  background: #000;
+  margin: auto 0 50px
+}
+.header__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 100px 40px 0;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  visibility: hidden;
+  overflow-y: auto;
+  z-index: 99;
+  display: none;
+  transition: transform .3s linear,visibility .3s linear,display .3s linear
+}
+.header__menu.is-show {
+  visibility: visible;
+  transform: translateX(0)
+}
+.header__menu .header__nav {
+  display: block
+}
+.header__menu .header__list {
+  flex-direction: column
+}
+.header__menu .header__list-item:not(:last-child) {
+  margin: 0 0 32px
+}
+.header__menu .header__list-link {
+  color: #000;
+  font-size: 24px;
+  line-height: 1.4
+}
+.header__menu .header__list-link:after {
+  background-color: #000
+}
+@media (max-width:1440px) {
+  .header {
+    padding: 18px 0
+  }
+  .header__logo .icon {
+    width: 179px;
+    height: 35px
+  }
+  .header__list-item:not(:last-child) {
+    margin-right: 35px
+  }
+  .header__list-link {
+    font-size: 14px
+  }
+}
+@media (max-width:992px) {
+  .header__logo .icon {
+    width: 240px;
+    height: 48px
+  }
+  .header__nav {
+    display: none
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    z-index: 100
+  }
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+}
+@media (max-width:768px) {
+  .header {
+    padding: 10px 0
+  }
+  .header__logo .icon {
+    width: 174px;
+    height: 30px
+  }
+  .header__menu {
+    max-width: 100%;
+    padding: 160px 20px 0
+  }
+  .header__menu .header__list {
+    align-items: center
+  }
+  .header__menu .header__list-item:not(:last-child) {
+    margin: 0 0 20px
+  }
+}

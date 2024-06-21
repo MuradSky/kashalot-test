@@ -1,0 +1,48 @@
+.tabs__list {
+  display: flex
+}
+.tabs__item:not(:last-child) {
+  margin-right: 30px
+}
+.tabs__button {
+  font-weight: 600;
+  font-size: 20px;
+  color: #747676;
+  line-height: 27px;
+  text-align: center;
+  border: 2px solid #ededed;
+  border-radius: 100px;
+  padding: 20px 28px;
+  transition: background-color .3s linear,color .3s linear,border-color .3s linear
+}
+.tabs__button:active,
+.tabs__button:hover {
+  color: #000;
+  background-color: #f0f2f4;
+  border-color: #ededed
+}
+.tabs__button_active {
+  color: #000;
+  background-color: #f0f2f4;
+  border-color: #ededed
+}
+@media (max-width:1660px) {
+  .tabs__item:not(:last-child) {
+    margin-right: 20px
+  }
+  .tabs__button {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 23px 15px 22px;
+    white-space: nowrap
+  }
+}
+@media (max-width:1024px) {
+  .tabs__list {
+    overflow-y: hidden;
+    overflow-x: auto
+  }
+  .tabs__item:not(:last-child) {
+    margin-right: 5px
+  }
+}

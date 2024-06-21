@@ -1,0 +1,65 @@
+.breadcrumbs {
+  padding: 40px 0
+}
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap
+}
+.breadcrumbs__item {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px
+}
+.breadcrumbs__item:not(:last-child):after {
+  content: ">";
+  display: inline-block;
+  color: #000;
+  margin: 0 5px
+}
+.breadcrumbs__item a {
+  color: #000
+}
+.breadcrumbs__item span {
+  color: #747676
+}
+.breadcrumbs_absolute {
+  position: absolute;
+  z-index: 100;
+  width: 100%
+}
+.breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item {
+  white-space: nowrap
+}
+.breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item a,
+.breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item:after {
+  color: #fff
+}
+.breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item span {
+  color: #cfcfcf
+}
+@media (max-width:1440px) {
+  .breadcrumbs {
+    padding: 32px 0
+  }
+  .breadcrumbs__item {
+    font-size: 12px;
+    line-height: 16.39px
+  }
+}
+@media (max-width:1240px) {
+  .breadcrumbs_absolute {
+    position: static
+  }
+  .breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item a,
+  .breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item:after {
+    color: #000
+  }
+  .breadcrumbs_absolute .breadcrumbs__list .breadcrumbs__item span {
+    color: #747676
+  }
+}
+@media (max-width:768px) {
+  .breadcrumbs {
+    padding: 28px 0
+  }
+}

@@ -1,0 +1,136 @@
+.travel {
+  padding-bottom: 150px
+}
+.travel__wrapper {
+  position: relative
+}
+.travel__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff
+}
+.travel__title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 32px
+}
+.travel__title span {
+  font-weight: 300
+}
+.travel__text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 45px
+}
+.travel__form {
+  width: 100%;
+  max-width: 425px;
+  margin: 0 auto
+}
+.travel__form .form__btn {
+  width: 100%;
+  max-width: 305px;
+  margin: 65px auto 0
+}
+.travel__form .form__input {
+  border-color: #fff;
+  color: #fff
+}
+.travel__form .form__input::-moz-placeholder {
+  color: #fff
+}
+.travel__form .form__input:-ms-input-placeholder {
+  color: #fff
+}
+.travel__form .form__input::placeholder {
+  color: #fff
+}
+@media (max-width:1440px) {
+  .travel {
+    padding-bottom: 114px
+  }
+  .travel__title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 26px
+  }
+  .travel__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 22px
+  }
+  .travel__form .form__btn {
+    max-width: 240px;
+    margin: 40px auto 0
+  }
+}
+@media (max-width:1240px) {
+  .travel__content {
+    position: static;
+    transform: translate(0,0);
+    color: #000;
+    padding-top: 60px
+  }
+  .travel__form .form__btn {
+    border-color: #000;
+    color: #000
+  }
+  .travel__form .form__btn:hover:not(:active) {
+    color: #fff;
+    background-color: #000
+  }
+  .travel__form .form__input {
+    border-color: #000;
+    color: #000
+  }
+  .travel__form .form__input::-moz-placeholder {
+    color: #000
+  }
+  .travel__form .form__input:-ms-input-placeholder {
+    color: #000
+  }
+  .travel__form .form__input::placeholder {
+    color: #000
+  }
+}
+@media (max-width:1024px) {
+  .travel__text {
+    font-size: 20px;
+    line-height: 28px
+  }
+}
+@media (max-width:768px) {
+  .travel {
+    padding-bottom: 60px
+  }
+  .travel__title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 16px
+  }
+  .travel__text {
+    font-size: 16px;
+    line-height: 28px
+  }
+  .travel__text br {
+    display: none
+  }
+  .travel__form {
+    max-width: initial
+  }
+  .travel__form .form__input {
+    border-color: #ededed
+  }
+}
+@media (max-width:540px) {
+  .travel__form .form__btn {
+    max-width: initial;
+    margin: 40px 0 0
+  }
+}

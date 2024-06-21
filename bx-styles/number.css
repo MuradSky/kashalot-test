@@ -1,0 +1,241 @@
+.number {
+  padding: 82.5px 0 190px
+}
+.number__title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 32px
+}
+.number__title span {
+  font-weight: 300
+}
+.number__tabs {
+  margin-bottom: 40px
+}
+.number__row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: -70px -10px 0
+}
+.number__card {
+  width: calc(50% - 20px);
+  margin: 72px 10px 0;
+  display: flex;
+  flex-direction: column
+}
+.number__img,
+.number__img img {
+  border-radius: 20px
+}
+.number__img img:not(:first-child):not(.slick-slide) {
+  display: none
+}
+.number__nav {
+  padding: 0 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.number__nav-buttons button:hover:not(:active) .icon {
+  color: #a4a4a4
+}
+.number__nav-buttons button .icon {
+  width: 92px;
+  height: 64px;
+  color: #ededed;
+  transition: .2s linear
+}
+.number__counter {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 33px
+}
+.number__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start
+}
+.number__body-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000;
+  margin-bottom: 22px
+}
+.number__flex {
+  display: flex;
+  margin: 0 0 45px
+}
+.number__col {
+  margin: 10px 0 0
+}
+.number__col:nth-child(2) {
+  margin-left: 120px
+}
+.number__col:nth-child(3) {
+  margin-left: 60px
+}
+.number__col-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #747676
+}
+.number__col-item .icon {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  margin-right: 15px
+}
+.number__col-item:first-of-type {
+  margin-bottom: 10px
+}
+.number__col-item span sup {
+  font-size: 12px
+}
+.number__button {
+  margin-top: auto
+}
+@media (max-width:1660px) {
+  .number__col-item {
+    white-space: nowrap;
+    font-size: 16px
+  }
+  .number__col-item .icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 12px
+  }
+  .number__col-item span sup {
+    font-size: 10px
+  }
+}
+@media (max-width:1440px) {
+  .number {
+    padding: 55px 0 112px
+  }
+  .number__title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 22px
+  }
+  .number__tabs {
+    margin-bottom: 30px
+  }
+  .number__card {
+    margin: 68px 10px 0
+  }
+  .number__nav {
+    padding: 0 13px;
+    margin: 13px 0
+  }
+  .number__nav-buttons button .icon {
+    width: 70px;
+    height: 50px
+  }
+  .number__counter {
+    font-size: 16px
+  }
+  .number__body-title {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 14px
+  }
+  .number__flex {
+    margin: 0 0 26px
+  }
+  .number__col:nth-child(2) {
+    margin-left: 80px
+  }
+  .number__col:nth-child(3) {
+    margin-left: 40px
+  }
+  .number__col-item:first-of-type {
+    margin-bottom: 0
+  }
+}
+@media (max-width:1280px) {
+  .number__col:nth-child(2) {
+    margin-left: 32px
+  }
+  .number__col:nth-child(3) {
+    margin-left: 32px
+  }
+}
+@media (max-width:1240px) {
+  .number {
+    padding: 50px 0 100px
+  }
+  .number__flex {
+    margin: 0 0 24px
+  }
+}
+@media (max-width:1024px) {
+  .number__row {
+    width: 100%;
+    margin: -32px 0 0
+  }
+  .number__card {
+    width: 100%;
+    margin: 32px 0 0
+  }
+  .number__col-item {
+    white-space: initial
+  }
+}
+@media (max-width:768px) {
+  .number {
+    padding: 0 0 60px
+  }
+  .number__title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 16px
+  }
+  .number__img,
+  .number__img img {
+    border-radius: 10px
+  }
+  .number__nav {
+    padding: 0;
+    margin: 12px 0
+  }
+  .number__nav-buttons button .icon {
+    width: 60px;
+    height: 42px
+  }
+  .number__body-title {
+    font-size: 20px;
+    line-height: 28px
+  }
+  .number__col-item .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px
+  }
+  .number__button {
+    width: 100%;
+    max-width: 200px;
+    padding: 7px 20px
+  }
+}
+@media (max-width:600px) {
+  .number__flex {
+    flex-direction: column
+  }
+  .number__col {
+    margin: 0
+  }
+  .number__col:nth-child(2) {
+    margin-left: 0
+  }
+  .number__col:nth-child(3) {
+    margin-left: 0
+  }
+}
