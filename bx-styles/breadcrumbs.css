@@ -1,14 +1,13 @@
 .breadcrumbs {
   padding: 40px 0
 }
-.breadcrumbs__list {
-  display: flex;
-  flex-wrap: wrap
-}
 .breadcrumbs__item {
+  display: inline;
   font-weight: 600;
   font-size: 15px;
-  line-height: 20px
+  line-height: 20px;
+  white-space: wrap;
+  text-wrap: balance
 }
 .breadcrumbs__item:not(:last-child):after {
   content: ">";
@@ -20,6 +19,7 @@
   color: #000
 }
 .breadcrumbs__item span {
+  text-wrap: balance;
   color: #747676
 }
 .breadcrumbs_absolute {

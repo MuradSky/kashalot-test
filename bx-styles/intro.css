@@ -78,12 +78,12 @@
     height: 704px
   }
   .intro__content {
-    padding: 256px 0 0
+    padding: 264px 0 0
   }
   .intro__title {
     font-size: 75px;
     line-height: 85px;
-    margin-bottom: 145px
+    margin-bottom: 140px
   }
   .intro__text {
     font-size: 16px;
@@ -96,10 +96,10 @@
     width: 22px
   }
   .intro.intro_second .intro__content {
-    padding: 212px 40px 0
+    padding: 225px 40px 0
   }
   .intro.intro_second .intro__title {
-    margin-bottom: 116px
+    margin-bottom: 100px
   }
   .intro.intro_second .intro__text {
     font-size: 14px

@@ -15,13 +15,15 @@ $(function () {
       dropdownAutoWidth: true,
       placeholder: placeholder,
       width: null,
-      dropdownCssClass: type === 'horizontal' ? 'dd-horizontal' : type === 'vertical' ? 'dd-vertical' : ''
+      dropdownCssClass: type === 'horizontal' ? 'dd-horizontal' : type === 'vertical' ? 'dd-vertical' : '',
+      dropdownParent: $that.parent()
     });
 
     var getDdList = function getDdList() {
       var ddSelector = type === 'horizontal' ? '.select2-dropdown.dd-horizontal' : type === 'vertical' ? '.select2-dropdown.dd-vertical' : '';
       var ddList = $(ddSelector);
       ddList.find('.js-select2-dropdown-label').remove();
+      ddList.parent().addClass('dd-list');
       return ddList;
     };
 

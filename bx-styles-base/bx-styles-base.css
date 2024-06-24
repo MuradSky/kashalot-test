@@ -24,7 +24,7 @@
 }
 @font-face {
   font-family: Kudryashev;
-  src: url(../fonts/Kudryashev-Regular.woff2) format("woff2"),url(../fonts/Kudryashev-Regular.woff) format("woff");
+  src: url(../fonts/KudryashevDisplay.woff2) format("woff2"),url(../fonts/KudryashevDisplay.woff) format("woff");
   font-weight: 400;
   font-style: normal
 }
@@ -38,8 +38,8 @@ html {
 ::after,
 ::before {
   box-sizing: border-box;
-  leading-trim: both;
-  text-edge: cap
+  font-kerning: normal;
+  font-feature-settings: "pnum" on,"lnum" on
 }
 h1,
 h2,

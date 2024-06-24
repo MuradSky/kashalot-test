@@ -198,9 +198,11 @@
     line-height: 35px;
     margin-bottom: 16px
   }
-  .number__img,
-  .number__img img {
+  .number__img {
     border-radius: 10px
+  }
+  .number__img img {
+    border-radius: 20px
   }
   .number__nav {
     padding: 0;

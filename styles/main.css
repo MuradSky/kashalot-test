@@ -408,7 +408,7 @@ template {
 
 @font-face {
   font-family: 'Kudryashev';
-  src: url("../fonts/Kudryashev-Regular.woff2") format("woff2"), url("../fonts/Kudryashev-Regular.woff") format("woff");
+  src: url("../fonts/KudryashevDisplay.woff2") format("woff2"), url("../fonts/KudryashevDisplay.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -422,8 +422,8 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
-  leading-trim: both;
-  text-edge: cap;
+  font-kerning: normal;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 h1,
@@ -582,15 +582,13 @@ ul {
   padding: 40px 0;
 }
 
-.breadcrumbs__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .breadcrumbs__item {
+  display: inline;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
+  white-space: wrap;
+  text-wrap: balance;
 }
 
 .breadcrumbs__item:not(:last-child):after {
@@ -605,6 +603,7 @@ ul {
 }
 
 .breadcrumbs__item span {
+  text-wrap: balance;
   color: #747676;
 }
 
@@ -647,6 +646,10 @@ ul {
 
 .select ~ .select2-container {
   width: 100%;
+}
+
+.select ~ .select2-container.dd-list {
+  top: 100% !important;
 }
 
 .select ~ .select2-container .select2-selection--single {
@@ -715,8 +718,6 @@ ul {
   border-radius: 20px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
   padding: 50px;
-  max-width: 546px;
-  min-width: 330px;
 }
 
 .select2-container.select2-container--default .select2-dropdown .select2-search {
@@ -761,6 +762,8 @@ ul {
 
 .select2-container.select2-container--default .dd-vertical {
   padding: 50px 20px 50px 50px;
+  max-width: 330px !important;
+  min-width: 330px !important;
 }
 
 .select2-container.select2-container--default .dd-vertical .select2-results__options {
@@ -771,6 +774,15 @@ ul {
   margin-bottom: 10px;
   padding-bottom: 14px;
   border-bottom: 1px solid #EDEDED;
+}
+
+.select2-container.select2-container--default .dd-vertical .select2-results__option {
+  padding: 5px 0;
+}
+
+.select2-container.select2-container--default .dd-horizontal {
+  max-width: 546px !important;
+  min-width: 546px !important;
 }
 
 .select2-container.select2-container--default .dd-horizontal .select2-results__options {
@@ -940,7 +952,7 @@ ul {
 }
 
 .header__burger.is-change .header__burger-line1 {
-  transform: rotate(-45deg) translate(-4px, 2px);
+  transform: rotate(-45deg) translate(0px, 2px);
   background-color: #000;
 }
 
@@ -949,12 +961,11 @@ ul {
 }
 
 .header__burger.is-change .header__burger-line3 {
-  transform: rotate(45deg) translate(-6px, -5px);
+  transform: rotate(45deg) translate(-2px, -5px);
   background-color: #000;
 }
 
 .header__burger-line1,
-.header__burger-line2,
 .header__burger-line3 {
   display: block;
   width: 25px;
@@ -1024,6 +1035,7 @@ ul {
 }
 
 .header__menu .header__list {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -1294,7 +1306,8 @@ ul {
 
 .services__item:hover .services__item-text,
 .services__item:focus .services__item-text {
-  display: block;
+  max-height: 100rem;
+  opacity: 1;
 }
 
 .services__item-content {
@@ -1317,8 +1330,10 @@ ul {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  transition: opacity .3s linear, visibility .3s linear;
-  display: none;
+  transition: max-height .2s linear, opacity .2s linear;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
 }
 
 .programs {
@@ -1633,6 +1648,7 @@ ul {
   color: #000;
   position: relative;
   padding-bottom: 9px;
+  margin-right: 40px;
 }
 
 .hotel__info-link::after {
@@ -1726,6 +1742,7 @@ ul {
 .filter__item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .filter__item:not(:last-child) {
@@ -1769,6 +1786,7 @@ ul {
   width: 20px;
   height: 24px;
   margin-right: 10px;
+  object-fit: contain;
 }
 
 .about__head-btn {
@@ -1780,6 +1798,7 @@ ul {
   border: 1px solid #ededed;
   padding: 7px 26px;
   transition: background-color .3s linear, border-color .3s linear, color .3s linear;
+  color: #000;
 }
 
 .about__head-btn:hover {
@@ -1868,13 +1887,11 @@ ul {
   transition: opacity .3s linear;
 }
 
-.about__item:hover::before,
-.about__item:focus::before {
+.about__item_last::before {
   opacity: 1;
 }
 
-.about__item:hover .about__item-content,
-.about__item:focus .about__item-content {
+.about__item_last .about__item-content {
   opacity: 1;
 }
 
@@ -2344,6 +2361,10 @@ ul {
     margin-bottom: 136px;
   }
 
+  .footer__logo {
+    margin-bottom: 18px;
+  }
+
   .footer__logo .icon {
     width: 178px;
     height: 49px;
@@ -2351,7 +2372,8 @@ ul {
 
   .footer__info-text {
     font-size: 14px;
-    line-height: 120%;
+    line-height: 23px;
+    margin-bottom: 44px;
   }
 
   .footer__social-link .icon {
@@ -2418,13 +2440,13 @@ ul {
   }
 
   .intro__content {
-    padding: 256px 0 0;
+    padding: 264px 0 0;
   }
 
   .intro__title {
     font-size: 75px;
     line-height: 85px;
-    margin-bottom: 145px;
+    margin-bottom: 140px;
   }
 
   .intro__text {
@@ -2441,11 +2463,11 @@ ul {
   }
 
   .intro.intro_second .intro__content {
-    padding: 212px 40px 0;
+    padding: 225px 40px 0;
   }
 
   .intro.intro_second .intro__title {
-    margin-bottom: 116px;
+    margin-bottom: 100px;
   }
 
   .intro.intro_second .intro__text {
@@ -2548,25 +2570,25 @@ ul {
 
   .programs__body-title {
     font-size: 25px;
-    line-height: 120%;
+    line-height: 34px;
     margin-bottom: 20px;
   }
 
   .programs__body-price {
     font-size: 20px;
-    line-height: 120%;
+    line-height: 27.32px;
     margin-bottom: 25px;
   }
 
   .programs__body-date {
     font-size: 14px;
-    line-height: 120%;
+    line-height: 19.12px;
     margin-bottom: 22px;
   }
 
   .programs__body-text {
     font-size: 14px;
-    line-height: 120%;
+    line-height: 22px;
     margin-bottom: 25px;
   }
 
@@ -2579,7 +2601,7 @@ ul {
   }
 
   .hotel {
-    padding-bottom: 64px;
+    padding-bottom: 115px;
   }
 
   .hotel__head {
@@ -2630,12 +2652,12 @@ ul {
   .hotel__info-link {
     font-size: 14px;
     line-height: 120%;
-    margin-right: 26px;
+    margin-right: 35px;
   }
 
   .hotel__link {
     max-width: 240px;
-    margin: 44px auto 0;
+    margin: 44px auto;
   }
 
   .travel {
@@ -2946,7 +2968,7 @@ ul {
   }
 
   .services {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   .services__row {
@@ -3117,7 +3139,7 @@ ul {
   }
 
   .programs_second .programs__row .programs__item .programs__body {
-    padding: 20px;
+    padding: 0 20px 20px;
   }
 
   .programs_second .programs__row .programs__item .programs__body-title {
@@ -3291,16 +3313,21 @@ ul {
 
   .select2-container.select2-container--default .select2-dropdown {
     padding: 24px;
-    min-width: 270px;
-    max-width: 270px;
   }
 
   .select2-container.select2-container--default .dd-vertical {
     padding: 24px 10px 24px 24px;
+    min-width: 270px !important;
+    max-width: 270px !important;
   }
 
   .select2-container.select2-container--default .dd-vertical .select2-results__options {
     padding-right: 14px;
+  }
+
+  .select2-container.select2-container--default .dd-horizontal {
+    min-width: 270px !important;
+    max-width: 270px !important;
   }
 
   .select2-container.select2-container--default .dd-horizontal .select2-results__option {
@@ -3315,7 +3342,7 @@ ul {
   }
 
   .header {
-    padding: 10px 0;
+    padding: 30px 0;
   }
 
   .header__logo .icon {
@@ -3347,6 +3374,10 @@ ul {
 
   .footer__info-text {
     margin-bottom: 46px;
+  }
+
+  .footer__info-text br {
+    display: none;
   }
 
   .footer__menu {
@@ -3465,7 +3496,7 @@ ul {
   }
 
   .programs.programs_second {
-    padding: 0 0 60px;
+    padding: 40px 0 80px;
   }
 
   .programs__head {
@@ -3507,7 +3538,7 @@ ul {
   }
 
   .programs__body {
-    padding: 0 15px 15px;
+    padding: 0 15px 40px;
   }
 
   .programs__body-title {
@@ -3538,6 +3569,10 @@ ul {
     margin: 20px 0 0;
   }
 
+  .programs_second .programs__row .programs__item .programs__body {
+    padding: 0 15px 40px;
+  }
+
   .programs_second .programs__row .programs__item .programs__item-img {
     height: 500px;
   }
@@ -3547,7 +3582,7 @@ ul {
   }
 
   .hotel.hotel_second {
-    padding: 0 0 80px;
+    padding: 40px 0 80px;
   }
 
   .hotel__head {
@@ -3598,6 +3633,10 @@ ul {
     padding-bottom: 60px;
   }
 
+  .travel__img img {
+    border-radius: 10px;
+  }
+
   .travel__title {
     font-size: 28px;
     line-height: 35px;
@@ -3642,12 +3681,16 @@ ul {
   }
 
   .about {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   .about__head-row {
     font-size: 14px;
     line-height: 1.6;
+  }
+
+  .about__head-place {
+    font-weight: 400;
   }
 
   .about__title {
@@ -3680,7 +3723,7 @@ ul {
   }
 
   .about__right {
-    padding: 15px;
+    padding: 40px 15px;
   }
 
   .number {
@@ -3701,7 +3744,7 @@ ul {
   }
 
   .number__img img {
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   .number__nav {

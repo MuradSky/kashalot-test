@@ -92,7 +92,8 @@
   line-height: 27px;
   color: #000;
   position: relative;
-  padding-bottom: 9px
+  padding-bottom: 9px;
+  margin-right: 40px
 }
 .hotel__info-link::after {
   content: "";
@@ -116,7 +117,7 @@
 }
 @media (max-width:1440px) {
   .hotel {
-    padding-bottom: 64px
+    padding-bottom: 115px
   }
   .hotel__head {
     margin-bottom: 35px
@@ -151,11 +152,11 @@
   .hotel__info-link {
     font-size: 14px;
     line-height: 120%;
-    margin-right: 26px
+    margin-right: 35px
   }
   .hotel__link {
     max-width: 240px;
-    margin: 44px auto 0
+    margin: 44px auto
   }
 }
 @media (max-width:1420px) {
@@ -197,7 +198,7 @@
     padding-bottom: 60px
   }
   .hotel.hotel_second {
-    padding: 0 0 80px
+    padding: 40px 0 80px
   }
   .hotel__head {
     margin-bottom: 32px

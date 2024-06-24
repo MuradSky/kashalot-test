@@ -109,6 +109,9 @@
   .travel {
     padding-bottom: 60px
   }
+  .travel__img img {
+    border-radius: 10px
+  }
   .travel__title {
     font-size: 28px;
     line-height: 35px;

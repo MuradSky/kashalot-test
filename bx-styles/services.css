@@ -78,7 +78,8 @@
 }
 .services__item:focus .services__item-text,
 .services__item:hover .services__item-text {
-  display: block
+  max-height: 100rem;
+  opacity: 1
 }
 .services__item-content {
   position: absolute;
@@ -94,11 +95,14 @@
   line-height: 60px
 }
 .services__item-text {
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  transition: opacity .3s linear,visibility .3s linear;
-  display: none
+  transition: max-height .2s linear,opacity .2s linear;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0
 }
 @media (max-width:1550px) {
   .services__row {
@@ -172,7 +176,7 @@
 }
 @media (max-width:1240px) {
   .services {
-    padding: 60px 0
+    padding: 80px 0
   }
   .services__row {
     flex-wrap: wrap;

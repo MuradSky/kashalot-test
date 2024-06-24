@@ -103,13 +103,17 @@
     flex-direction: row;
     margin-bottom: 136px
   }
+  .footer__logo {
+    margin-bottom: 18px
+  }
   .footer__logo .icon {
     width: 178px;
     height: 49px
   }
   .footer__info-text {
     font-size: 14px;
-    line-height: 120%
+    line-height: 23px;
+    margin-bottom: 44px
   }
   .footer__social-link .icon {
     width: 32px;
@@ -181,6 +185,9 @@
   }
   .footer__info-text {
     margin-bottom: 46px
+  }
+  .footer__info-text br {
+    display: none
   }
   .footer__menu {
     flex-direction: column;

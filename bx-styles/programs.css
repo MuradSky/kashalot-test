@@ -194,22 +194,22 @@
   }
   .programs__body-title {
     font-size: 25px;
-    line-height: 120%;
+    line-height: 34px;
     margin-bottom: 20px
   }
   .programs__body-price {
     font-size: 20px;
-    line-height: 120%;
+    line-height: 27.32px;
     margin-bottom: 25px
   }
   .programs__body-date {
     font-size: 14px;
-    line-height: 120%;
+    line-height: 19.12px;
     margin-bottom: 22px
   }
   .programs__body-text {
     font-size: 14px;
-    line-height: 120%;
+    line-height: 22px;
     margin-bottom: 25px
   }
   .programs__body-link {
@@ -274,7 +274,7 @@
     display: block
   }
   .programs_second .programs__row .programs__item .programs__body {
-    padding: 20px
+    padding: 0 20px 20px
   }
   .programs_second .programs__row .programs__item .programs__body-title {
     font-size: 24px;
@@ -286,7 +286,7 @@
     padding-bottom: 60px
   }
   .programs.programs_second {
-    padding: 0 0 60px
+    padding: 40px 0 80px
   }
   .programs__head {
     margin-bottom: 32px
@@ -314,7 +314,7 @@
     border-radius: 10px
   }
   .programs__body {
-    padding: 0 15px 15px
+    padding: 0 15px 40px
   }
   .programs__body-title {
     font-size: 20px;
@@ -335,6 +335,9 @@
   .programs_second .programs__row .programs__item {
     width: 100%;
     margin: 20px 0 0
+  }
+  .programs_second .programs__row .programs__item .programs__body {
+    padding: 0 15px 40px
   }
   .programs_second .programs__row .programs__item .programs__item-img {
     height: 500px
