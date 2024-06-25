@@ -139,7 +139,7 @@
     height: 500px
   }
   .intro__img {
-    height: 700px
+    height: 670px
   }
   .intro.intro_second .intro__content {
     padding: 75px 0
@@ -156,8 +156,11 @@
     width: 100%
   }
 }
-@media (max-width:340px) {
-  .intro__content {
-    padding: 180px 0 0
+@media (max-width:500px) {
+  .intro__title {
+    margin-bottom: 54px
+  }
+  .intro__title br {
+    display: none
   }
 }

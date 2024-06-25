@@ -21,6 +21,7 @@ $(function () {
       setTimeout(function () {
         $headerBurger.removeClass("is-change");
         $headerMenu.removeClass("is-show");
+        $header.removeClass("is-show");
       }, 500);
       $body.removeAttr("style");
     }

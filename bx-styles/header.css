@@ -113,9 +113,9 @@
   justify-content: center;
   margin: 0 5px
 }
-.header__social a img {
-  width: 28px;
-  height: 28px
+.header__social a svg {
+  width: 42px;
+  height: 42px
 }
 .header__btn {
   background: #000;
