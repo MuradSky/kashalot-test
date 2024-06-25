@@ -282,16 +282,15 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$(function () {
-  var $serviceItem = $('.js-service-item');
-  $serviceItem.on('mouseenter', function () {
-    var that = $(this);
-    var text = that.find('[data-text]');
-    text.css('max-height', text[0].scrollHeight);
-  }).on('mouseleave', function () {
-    var that = $(this);
-    that.find('[data-text]').css('max-height', 0);
-  });
+/* WEBPACK VAR INJECTION */(function($) {$(function () {// const $serviceItem = $('.js-service-item')
+  // $serviceItem.on('mouseenter', function() {
+  //     const that = $(this)
+  //     const text = that.find('[data-text]')
+  //     text.css('max-height', text[0].scrollHeight)
+  // }).on('mouseleave', function() {
+  //     const that = $(this)
+  //     that.find('[data-text]').css('max-height', 0)
+  // })
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "jquery")))
 

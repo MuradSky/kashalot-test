@@ -19,6 +19,7 @@
 }
 .intro__title {
   font-family: Kudryashev,sans-serif;
+  font-weight: 400;
   font-size: 100px;
   line-height: 110px;
   text-align: center;
@@ -153,5 +154,10 @@
 @media (max-width:540px) {
   .intro__btn {
     width: 100%
+  }
+}
+@media (max-width:340px) {
+  .intro__content {
+    padding: 180px 0 0
   }
 }

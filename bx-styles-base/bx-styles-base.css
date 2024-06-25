@@ -29,8 +29,8 @@
   font-style: normal
 }
 html {
-  scroll-behavior: smooth;
-  scroll-padding: 100px;
+  -webkit-text-size-adjust: 100%!important;
+  -webkit-font-smoothing: antialiased!important;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%
 }
@@ -38,8 +38,11 @@ html {
 ::after,
 ::before {
   box-sizing: border-box;
-  font-kerning: normal;
-  font-feature-settings: "pnum" on,"lnum" on
+  -webkit-text-size-adjust: 100%!important;
+  -webkit-font-smoothing: antialiased!important;
+  -webkit-text-size-adjust: auto;
+  -moz-text-size-adjust: auto;
+  text-size-adjust: auto
 }
 h1,
 h2,

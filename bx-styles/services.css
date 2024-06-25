@@ -74,12 +74,11 @@
 }
 .services__item:focus::before,
 .services__item:hover::before {
-  background-color: rgba(0,0,0,.5)
+  background-color: rgba(25,30,36,.9)
 }
 .services__item:focus .services__item-text,
 .services__item:hover .services__item-text {
-  max-height: 100rem;
-  opacity: 1
+  display: block
 }
 .services__item-content {
   position: absolute;
@@ -95,14 +94,11 @@
   line-height: 60px
 }
 .services__item-text {
-  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   transition: max-height .2s linear,opacity .2s linear;
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0
+  display: none
 }
 @media (max-width:1550px) {
   .services__row {
@@ -235,7 +231,7 @@
     border-radius: 10px
   }
   .services__item-content {
-    padding: 0 15px 15px
+    padding: 0 15px 24px
   }
   .services__item-title {
     font-size: 20px;
@@ -243,6 +239,7 @@
     margin-bottom: 15px
   }
   .services__item-text {
+    display: block;
     font-size: 14px;
     line-height: 1.6
   }

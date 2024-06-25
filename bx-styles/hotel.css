@@ -169,9 +169,6 @@
   .hotel__info-link {
     margin-right: 0
   }
-  .hotel__info {
-    align-items: start
-  }
 }
 @media (max-width:1100px) {
   .hotel__item {
