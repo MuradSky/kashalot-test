@@ -30,8 +30,12 @@ $(function () {
     $that.on('select2:open', function () {
       var ddList = getDdList();
 
-      if (ddList.length) {
+      if (ddList.length && type === 'horizontal') {
         ddList.find('.select2-results').before($("<div class=\"js-select2-dropdown-label select2-dropdown-label\">".concat(label, "</div>")));
+      } else if (type === 'vertical') {
+        setTimeout(function () {
+          $that.next().next().find('.select2-results__options').children().eq(0).addClass('is-first-option');
+        }, 0);
       }
     });
   });
